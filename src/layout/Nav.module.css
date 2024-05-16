@@ -1,0 +1,54 @@
+/* src/layout/Nav.module.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo img {
+  height: 40px; /* Задайте нужный размер */
+}
+
+.navLinks {
+  list-style-type: none;
+  display: flex;
+  gap: 15px;
+}
+
+.navLinks li {
+  margin: 0 10px;
+}
+
+.navLinks a {
+  text-decoration: none;
+  color: #000;
+}
+
+.navButtons {
+  display: flex;
+  gap: 10px;
+}
+
+.requestButton, .calculationButton {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: white;
+}
+
+.requestButton {
+  background-color: orange;
+}
+
+.calculationButton {
+  background-color: navy;
+}
+
+.buttonIcon {
+  margin-right: 10px;
+  height: 20px; /* Задайте нужный размер */
+}
