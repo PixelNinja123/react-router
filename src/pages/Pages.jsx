@@ -1,4 +1,3 @@
-// src/pages/Pages.jsx
 import React from 'react';
 
 export const Services = () => {
