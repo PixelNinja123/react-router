@@ -3,8 +3,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Nav.module.css';
 import logo from './images/logo.svg';
-import measuringIcon from './images/measuring.svg'; // Импортируем изображение
-import calculationIcon from './images/calculation.svg'; // Импортируем изображение
+import measuringIcon from './images/measuring.svg';
+import calculationIcon from './images/calculation.svg';
 
 const Nav = () => {
   return (
