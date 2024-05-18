@@ -1,13 +1,12 @@
-// src/App.js
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Nav from './layout/Nav';
+import Navigation from './layout/Nav';
 import { Services, Products, AboutUs, Portfolio, FAQ, Contacts } from './pages/Pages';
 
 const App = () => {
   return (
     <Router>
-      <Nav />
+      <Navigation />
       <Routes>
         <Route path="/" element={<Services />} />
         <Route path="/products" element={<Products />} />
