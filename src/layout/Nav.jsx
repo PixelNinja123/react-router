@@ -1,37 +1,36 @@
-// src/layout/Nav.jsx
 import React from 'react';
 import { Link } from 'react-router-dom';
-import styles from './Nav.module.css';
-import logo from './images/logo.svg';
-import measuringIcon from './images/measuring.svg';
-import calculationIcon from './images/calculation.svg';
+import navStyles from './Nav.module.css';
+import brandLogo from './images/logo.svg';
+import requestSvg from './images/measuring.svg';
+import calcSvg from './images/calculation.svg';
 
-const Nav = () => {
+const Navigation = () => {
   return (
-    <nav className={styles.navbar}>
-      <div className={styles.logo}>
-        <img src={logo} alt="Logo" />
+    <header className={navStyles.header}>
+      <div className={navStyles.brand}>
+        <img src={brandLogo} alt="Brand Logo" />
       </div>
-      <ul className={styles.navLinks}>
+      <ul className={navStyles.menu}>
         <li><Link to="/">Services</Link></li>
         <li><Link to="/products">Products</Link></li>
-        <li><Link to="/about">About us</Link></li>
+        <li><Link to="/about">About Us</Link></li>
         <li><Link to="/portfolio">Portfolio</Link></li>
         <li><Link to="/faq">FAQ</Link></li>
         <li><Link to="/contacts">Contacts</Link></li>
       </ul>
-      <div className={styles.navButtons}>
-        <button className={styles.requestButton}>
-          <img src={measuringIcon} alt="Measuring" className={styles.buttonIcon} />
-          Make request
+      <div className={navStyles.actions}>
+        <button className={navStyles.requestBtn}>
+          <img src={requestSvg} alt="Request" className={navStyles.icon} />
+          Make Request
         </button>
-        <button className={styles.calculationButton}>
-          <img src={calculationIcon} alt="Calculation" className={styles.buttonIcon} />
+        <button className={navStyles.calcBtn}>
+          <img src={calcSvg} alt="Calculate" className={navStyles.icon} />
           Calculation
         </button>
       </div>
-    </nav>
+    </header>
   );
 };
 
-export default Nav;
+export default Navigation;
