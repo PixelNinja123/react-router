@@ -1,54 +1,53 @@
-/* src/layout/Nav.module.css */
-.navbar {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 12px 24px;
 }
 
-.logo img {
-  height: 40px; /* Задайте нужный размер */
+.brand img {
+  height: 42px;
 }
 
-.navLinks {
+.menu {
   list-style-type: none;
   display: flex;
-  gap: 15px;
+  gap: 18px;
 }
 
-.navLinks li {
-  margin: 0 10px;
+.menu li {
+  margin: 0 12px;
 }
 
-.navLinks a {
+.menu a {
   text-decoration: none;
-  color: #000;
+  color: #333;
 }
 
-.navButtons {
+.actions {
   display: flex;
-  gap: 10px;
+  gap: 12px;
 }
 
-.requestButton, .calculationButton {
+.requestBtn, .calcBtn {
   display: flex;
   align-items: center;
   background-color: transparent;
   border: none;
-  padding: 10px 20px;
+  padding: 12px 24px;
   cursor: pointer;
-  color: white;
+  color: #fff;
 }
 
-.requestButton {
-  background-color: orange;
+.requestBtn {
+  background-color: #ff6600;
 }
 
-.calculationButton {
-  background-color: navy;
+.calcBtn {
+  background-color: #003366;
 }
 
-.buttonIcon {
-  margin-right: 10px;
-  height: 20px; /* Задайте нужный размер */
+.icon {
+  margin-right: 12px;
+  height: 22px;
 }
